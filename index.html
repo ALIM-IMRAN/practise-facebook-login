@@ -27,16 +27,22 @@
                     <p class="mb-4 ps-3">Click your picture or add an account.</p>
                     <div class="row gx-3 ps-3">
                         <div class="col col-lg-5">
-                            <div class="card b-radius">
-                                <div>
-                                    <button type="button" class="btn-close position-absolute cls-button"
-                                        aria-label="Close"></button>
-                                    <img src="images/profile.jpg" class="card-img-top bi-radius" alt="...">
+                            <!------------------------------- 
+                              modal link inside anchore tag
+                            ------------------------------- -->
+                            <a href="#" class="linking" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="card b-radius">
+                                    <div>
+                                        <button type="button" class="btn-close position-absolute cls-button"
+                                            aria-label="Close"></button>
+                                        <img src="images/profile.jpg" class="card-img-top bi-radius" alt="...">
+                                    </div>
+                                    <div class="c-footer py-2">
+                                        <p class="mb-0 text-dark">Alim</p>
+                                    </div>
                                 </div>
-                                <div class="c-footer py-2">
-                                    <p class="mb-0">Alim</p>
-                                </div>
-                            </div>
+                            </a>
+
                         </div>
                         <div class="col col-lg-5">
                             <div class="card b-radius">
@@ -47,7 +53,7 @@
                                     </div>
                                 </div>
 
-                                <div class="border-top c-footer py-2">
+                                <div class=" c-footer py-2">
                                     <p class="text-primary mb-0">Add Account</p>
                                 </div>
                             </div>
@@ -72,7 +78,8 @@
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-lg btn-primary fw-bold" type="button">Log In
+                            <button class="btn btn-lg btn-primary " type="button">
+                                <h5>Log In</h5>
                             </button>
                         </div>
                         <div class="text-center pt-3">
@@ -82,7 +89,9 @@
                             <hr>
                         </div>
                         <div class="d-grid gap-2 col-7 mx-auto my-2">
-                            <button class="btn b-new btn-lg fw-bold" type="button">Create New Account</button>
+                            <button class="btn b-new btn-lg " type="button">
+                                <h5>Create New Account</h5>
+                            </button>
 
                         </div>
                     </form>
@@ -94,6 +103,46 @@
             </div>
 
         </section>
+
+
+        <!-------------------------
+             Modal
+         -------------------------- -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body mdl-body d-flex flex-column align-items-center">
+                        <img src="images/profile.jpg" alt="">
+                        <p class="my-0">Alim Shaon</p>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-start">
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="password" placeholder="Passsword" class="form-control">
+                        </div>
+                        <div class="mb-3 form-check align-items-start">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto">
+                            <button class="btn btn-primary" type="button">
+                                <h5>Log In</h5>
+                            </button>
+                        </div>
+                        <div class="flex-grow-1 text-center">
+                            <a class="linking text-primary" href="">Forgotten
+                                password?</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="text-center p-5">
